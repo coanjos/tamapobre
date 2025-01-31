@@ -8,6 +8,8 @@
 - **Resumo do Jogo:** Jogo simples de Tamagotchi com visuais inspirados no Game Boy.
 - **Motivação:** Consolidar meus estudos na Godot com um jogo simples.
 
+![imagem](print.png "Tamapobre")
+
 ## Mecânicas
 
 - **Objetivos do Jogador:** Tomar conta do bichinho de estimação virtual, atendendo suas necessidades básicas.
