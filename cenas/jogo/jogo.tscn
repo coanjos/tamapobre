@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://b7ukfjpwqcuan"]
+[gd_scene load_steps=8 format=4 uid="uid://b7ukfjpwqcuan"]
 
 [ext_resource type="Script" path="res://cenas/jogo/jogo.gd" id="1_v4yxf"]
 [ext_resource type="PackedScene" uid="uid://c61cyn74lv15u" path="res://cenas/jogo/pet/pet.tscn" id="2_50bnf"]
 [ext_resource type="Texture2D" uid="uid://cg7c7u5b0xsq0" path="res://assets/tiles/grid.png" id="2_hnifx"]
-[ext_resource type="Texture2D" uid="uid://bd264r6ojcqy8" path="res://assets/comida/apple.png" id="4_bn7k2"]
+[ext_resource type="Texture2D" uid="uid://bjcm4dx6eqdok" path="res://assets/comida/maça.png" id="4_w1a8e"]
+[ext_resource type="AudioStream" uid="uid://c2ok74fvrmt4k" path="res://assets/sons/alimentar.wav" id="5_klntv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qqkwi"]
 texture = ExtResource("2_hnifx")
@@ -30,20 +31,21 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Panel" type="Panel" parent="UI"]
-layout_mode = 0
-offset_right = 544.0
-offset_bottom = 176.0
-
 [node name="TextureButton" type="TextureButton" parent="UI"]
-modulate = Color(1, 1, 1, 0.509804)
+modulate = Color(1, 1, 1, 0.27451)
+texture_filter = 1
 layout_mode = 0
 offset_left = 16.0
-offset_top = 32.0
-offset_right = 816.0
-offset_bottom = 832.0
-scale = Vector2(0.119999, 0.119999)
-texture_normal = ExtResource("4_bn7k2")
+offset_top = 16.0
+offset_right = 44.0
+offset_bottom = 44.0
+scale = Vector2(8, 8)
+texture_normal = ExtResource("4_w1a8e")
+ignore_texture_size = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_klntv")
+volume_db = -20.0
 
 [connection signal="mouse_entered" from="UI/TextureButton" to="." method="_on_texture_button_mouse_entered"]
 [connection signal="mouse_exited" from="UI/TextureButton" to="." method="_on_texture_button_mouse_exited"]

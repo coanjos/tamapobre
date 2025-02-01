@@ -3,6 +3,7 @@ extends Node2D
 class_name Jogo
 
 @onready var texture_button: TextureButton = $UI/TextureButton
+@onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
 func _ready() -> void:
 	pass
@@ -12,9 +13,7 @@ func _process(_delta: float) -> void:
 
 func _on_texture_button_pressed() -> void:
 	SignalManager.alimentou_tamagotchi.emit()
-
-func _on_area_2d_mouse_entered() -> void:
-	print('prints loucos')
+	audio_player.play()
 
 func _on_texture_button_mouse_entered() -> void:
 	texture_button.modulate = "ffffff"

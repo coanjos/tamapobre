@@ -1,5 +1,8 @@
 extends Node
 
+# TODO som ao alimentar
+# TODO mudar animação ao alimentar
+
 class_name Main
 
 func _ready() -> void:

@@ -2,6 +2,8 @@ extends Node2D
 
 class_name Pet
 
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 const VELOCIDADE: float = 100.0
 const PIXEL_STEP: int = 16
 
@@ -15,7 +17,7 @@ func _ready() -> void:
 	_posicao_inicial = position.y
 		
 func _process(delta: float) -> void:
-	oscilar(.8) 
+	oscilar(1) 
 	processar_necessidades(delta)
 		
 func decrementar_necessidade(valor: float, delta: float) -> float:
@@ -42,7 +44,11 @@ func processar_necessidades(delta: float) -> void:
 		print('COM FOME')
 		
 func _on_alimentou():
-	_fome = 1000.0	
+	_fome = 1000.0
 	print(_fome)
+	animation_player.play("sorriso")
+	await get_tree().create_timer(1.2).timeout
+	animation_player.play("idle")
+	
 	
 	
