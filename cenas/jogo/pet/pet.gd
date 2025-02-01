@@ -9,7 +9,7 @@ var _diversao: float = 1000.0
 var _higiene: float = 1000.0
 
 func _ready() -> void:
-	pass
+	SignalManager.alimentou_tamagotchi.connect(_on_alimentou)	
 	
 func _process(delta: float) -> void:
 	_fome = decrementar_necessidade(_fome, delta)
@@ -26,3 +26,7 @@ func decrementar_necessidade(valor: float, delta: float) -> float:
 		return 0
 	else:
 		return valor
+		
+func _on_alimentou():
+	_fome = 1000.0
+	print(_fome)

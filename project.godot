@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SceneManager="*res://autoloads/scene_manager.gd"
 Constants="*res://autoloads/constants.gd"
+SignalManager="*res://autoloads/signal_manager.gd"
 
 [display]
 
@@ -28,7 +29,7 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/script-ide/plugin.cfg")
 
 [rendering]
 
