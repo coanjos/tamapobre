@@ -1,7 +1,7 @@
 extends Node
 
-# TODO som ao alimentar
-# TODO mudar animação ao alimentar
+# TODO sumir asteróide na colisão do tiro
+# TODO game over ao encostar na nave o asteroide
 
 class_name Main
 

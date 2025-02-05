@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvtqve01rh78x"]
+
+[ext_resource type="Script" path="res://cenas/jogo/minigames/tiro.gd" id="1_q3fdd"]
+[ext_resource type="Texture2D" uid="uid://bjv0qtixn2oif" path="res://assets/nave/tiro.png" id="2_g7js8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d62fw"]
+size = Vector2(16, 48)
+
+[node name="Tiro" type="Area2D"]
+script = ExtResource("1_q3fdd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-112, -96)
+scale = Vector2(8, 8)
+texture = ExtResource("2_g7js8")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 24)
+shape = SubResource("RectangleShape2D_d62fw")

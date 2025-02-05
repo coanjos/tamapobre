@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://cenas/jogo/pet/pet.gd" id="1_oy14n"]
 [ext_resource type="Texture2D" uid="uid://b2rn11ryex6kd" path="res://assets/pet/idle.png" id="2_oi3i7"]
 
-[sub_resource type="Animation" id="Animation_6d4qb"]
-resource_name = "idle"
+[sub_resource type="Animation" id="Animation_xa176"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -18,8 +18,8 @@ tracks/0/keys = {
 "values": [ExtResource("2_oi3i7")]
 }
 
-[sub_resource type="Animation" id="Animation_xa176"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_6d4qb"]
+resource_name = "idle"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

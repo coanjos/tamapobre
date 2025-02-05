@@ -5,7 +5,6 @@ class_name Pet
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 const VELOCIDADE: float = 100.0
-const PIXEL_STEP: int = 16
 
 var _fome: float = 1000.0
 var _diversao: float = 1000.0
@@ -29,11 +28,11 @@ func decrementar_necessidade(valor: float, delta: float) -> float:
 		return valor
 		
 func oscilar(intensidade: float) -> void:	
-	if position.y < _posicao_inicial + PIXEL_STEP:
+	if position.y < _posicao_inicial + Constants.PIXEL_STEP:
 		await get_tree().create_timer(intensidade).timeout
-		position.y += PIXEL_STEP
+		position.y += Constants.PIXEL_STEP
 	else:
-		position.y -= PIXEL_STEP
+		position.y -= Constants.PIXEL_STEP
 		
 func processar_necessidades(delta: float) -> void:
 	_fome = decrementar_necessidade(_fome, delta)
