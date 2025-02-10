@@ -74,7 +74,6 @@ scale = Vector2(8, 8)
 texture = ExtResource("6_itd0y")
 
 [node name="EnergiaButton" type="TextureButton" parent="UI"]
-modulate = Color(1, 1, 1, 0.27451)
 layout_mode = 0
 offset_left = 288.0
 offset_top = 16.0

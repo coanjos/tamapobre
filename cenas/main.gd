@@ -1,7 +1,7 @@
 extends Node
 
-# TODO sumir asteróide na colisão do tiro
-# TODO game over ao encostar na nave o asteroide
+# TODO Needs Manager
+# TODO Salvar em arquivo
 
 class_name Main
 

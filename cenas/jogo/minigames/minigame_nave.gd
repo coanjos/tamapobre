@@ -52,6 +52,7 @@ func game_over() -> void:
 	stop_all()
 	explosao_morte()
 	await get_tree().create_timer(2).timeout
+	SignalManager.divertiu_tamagotchi.emit(_score)
 	SceneManager.carregar_cena_jogo()
 
 func _on_timer_timeout() -> void:

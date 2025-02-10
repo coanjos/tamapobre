@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://54fo26v0mi7a"
-path="res://.godot/imported/apple.png-d4381ad2216ca65b9ef11e39451a263c.ctex"
+uid="uid://b7810uhgptrim"
+path="res://.godot/imported/keyspace2.png-8fac2b233f0320b127521ac9f0f5ee4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/comida/apple.png"
-dest_files=["res://.godot/imported/apple.png-d4381ad2216ca65b9ef11e39451a263c.ctex"]
+source_file="res://assets/nave/keyspace2.png"
+dest_files=["res://.godot/imported/keyspace2.png-8fac2b233f0320b127521ac9f0f5ee4d.ctex"]
 
 [params]
 

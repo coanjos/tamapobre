@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fbdvcbe30fo4"
-path="res://.godot/imported/maça.png-0161cffe5dca5de31c25a818efadbc62.ctex"
+uid="uid://cydw74jdua5wb"
+path="res://.godot/imported/maca.png-fd2d976c73210de23ff87577d88bd1e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cenas/jogo/maça.png"
-dest_files=["res://.godot/imported/maça.png-0161cffe5dca5de31c25a818efadbc62.ctex"]
+source_file="res://assets/comida/maca.png"
+dest_files=["res://.godot/imported/maca.png-fd2d976c73210de23ff87577d88bd1e3.ctex"]
 
 [params]
 
